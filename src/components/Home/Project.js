@@ -82,9 +82,7 @@ const Service = () => {
                       alt={subcategory}
                       className="gallery-image"
                     />
-                    <div className="carousel-arrows">
-                      <p className="view-more-text">View Site →</p>
-                    </div>
+
                   </a>
                 </div>
               ))
