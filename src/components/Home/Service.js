@@ -21,7 +21,7 @@ const Service = () => {
           {/* Service 1: Website Development */}
           <div className="service-box">
             <div className="service-icon">
-              <img src="/images/image01.webp" alt="Website Development" className="service-icon-img" />
+              <img src="/Images/website.png" alt="Website Development" className="service-icon-img" />
             </div>
             <div className="service-box-heading">
               <h2>Website Development</h2>
@@ -31,7 +31,7 @@ const Service = () => {
           {/* Service 2: Web Application Development */}
           <div className="service-box">
             <div className="service-icon">
-              <img src="/images/logo.png" alt="Web Application Development" className="service-icon-img" />
+              <img src="/Images/application.png" alt="Web Application Development" className="service-icon-img" />
             </div>
             <div className="service-box-heading">
               <h2>Web Application Development</h2>
@@ -41,7 +41,7 @@ const Service = () => {
           {/* Service 3: Portfolio Creation */}
           <div className="service-box">
             <div className="service-icon">
-              <img src="/images/portfolio.png" alt="Portfolio Creation" className="service-icon-img" />
+              <img src="/Images/portfolio.png" alt="Portfolio Creation" className="service-icon-img" />
             </div>
             <div className="service-box-heading">
               <h2>Portfolio Creation</h2>
