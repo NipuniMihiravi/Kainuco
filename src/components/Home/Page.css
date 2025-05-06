@@ -406,7 +406,7 @@ body {
   width: 100px; /* Adjust the icon size */
   height: 100px;
   object-fit: contain;
-  background-color:red;
+
 }
 
 .service-box-heading h2 {
