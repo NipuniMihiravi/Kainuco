@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: black;
+  margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #CC5500;
+    color: white;
+    line-height: 1.6;
+    font-size: 1rem; /* Scales with user preference */
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+/* Default Styles */
+.vertical-navbar {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Hidden by default on mobile */
+  width:300px; /* Adjusted width of the navbar */
+  height: 100%;
+  background-color: black;
+  border: 8px solid #CC5500;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1px;
+  transition: left 0.3s ease-in-out; /* Smooth transition */
+  z-index: 1000;
+}
+
+/* Show navbar when open */
+.vertical-navbar.open {
+  left: 0;
+}
+
+/* Hide hamburger button on large screens */
+.hamburger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 1100;
+  display: block; /* Default for small screens */
+}
+
+/* Logo */
+/* Center the logo container */
+.logos-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  width:100%;
+  height: 300px;
+
+
+
+}
+
+/* Ensure the logo stays within the container */
+.logos {
+  width: 60%; /* Ensures it scales properly */
+  height: 90%;
+  object-fit: contain; /* Ensures the aspect ratio is maintained */
+
+}
+
+
+/* Navigation Links */
+.nav-links {
+  margin-top: 70px;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+}
+
+.nav-links li {
+  width: 95%;
+  text-align: center;
+}
+
+.nav-links li::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 0.5px;
+  margin: 10px auto;
+}
+
+/* Link Styles */
+.nav-links li button {
+  display: block;
+  padding: 10px;
+  width: 80%;
+  text-decoration: none;
+  color: #CC5500;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Open Sans', sans-serif;
+  background-color:black;
+}
+
+.nav-links li button:hover,
+.nav-links li button.active {
+  background: rgba(255, 255, 255, 0.2);
+  border-left: 1px solid #bea1cd;
+  color: white;
+  width: 250px;
+  transform: scale(1.05);
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 320px; /* Shift only for large screens */
+  padding: 20px;
+  overflow-y: auto;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+  transition: margin-left 0.3s ease-in-out;
+  overflow-x: hidden; /* Prevent horizontal movement */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .main-content {
+    padding: 10px; /* Reduce padding on smaller screens */
+    border-width: 3px; /* Make border thinner */
+    width: 100vw; /* Ensure full width */
+    position: fixed; /* Keep it in place */
+    left: 0;
+    top: 0;
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-content {
+    padding: 5px; /* Further reduce padding for very small screens */
+    border-width: 2px; /* Adjust border thickness */
+  }
+}
+
+/* Ensure no shifting when navbar opens */
+@media screen and (max-width: 1024px) {
+  .main-content {
+    margin-left: 0; /* No shift on smaller screens */
+    width: 100vw; /* Full width */
+  }
+
+  .vertical-navbar.open + .main-content {
+    margin-left: 0; /* Prevent movement */
+  }
+}
+
+/* Large Screens */
+@media screen and (min-width: 1025px) {
+  .hamburger {
+    display: none; /* Hide hamburger button */
+  }
+
+  .vertical-navbar {
+    left: 0;
+  }
+
+
+}
+
+
+/* Main Content */
+
+
+/* Wording Section */
+.wording {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping for small screens */
+}
+
+.wording h1 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  max-width: 1000px;
+  line-height: 2;
+  letter-spacing:2px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  text-transform:uppercase;
+}
+.wording .highlight {
+  color: #bea1cd; /* Set purple color for 'VISION' */
+  font-size: 25px;
+  font-weight: 700;
+}
+
+
+/* Second Heading (wording2) */
+.wording2 h1 {
+  font-size: 20px;
+  color: gray;
+  text-align: center;
+  letter-spacing:2px;
+  font-weight: 100;
+  max-width: 1200px;
+  line-height: 2;
+  margin: 0;
+  margin-top:30px;
+ font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* About Us Section */
+.about-us {
+  position: relative;
+  padding: 50px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin-top: 100px;
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-size: cover; /* Ensure the image covers the entire section */
+  background-position: center; /* Center the background image */
+}
+
+
+/* Text Column for About Us */
+.text-column {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.text-column p {
+  max-width: 800px;
+  margin: auto;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17.5px;
+  color:gray;
+  line-height: 1.625;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Animated Heading */
+.animated-heading {
+  font-size: 45px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  text-align: right;
+  position: relative;
+  opacity: 0; /* Initially hidden */
+  transform: translateX(100px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+  letter-spacing: 1px;
+}
+
+.animated-heading.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For Devices with Max Width of 768px (Tablets, small laptops) */
+@media screen and (max-width: 768px) {
+  .wording h1 {
+    font-size: 18px; /* Adjust font size */
+
+  }
+  .wording .highlight {
+    font-size: 18px;
+  }
+
+  .wording2 h1 {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+  }
+
+  .about-us {
+    padding: 40px;
+  }
+
+  .text-column {
+    padding: 5px;
+    max-width: 100%; /* Adjust width for smaller screens */
+  }
+
+  .text-column p {
+    font-size: 17.5px;
+     text-align: left;/* Smaller text for better readability */
+  }
+
+  .animated-heading {
+    font-size: 38px; /* Smaller font size */
+    text-align: center; /* Center-align on smaller screens */
+  }
+}
+
+/* For Devices with Max Width of 480px (Mobile) */
+@media screen and (max-width: 480px) {
+  .wording h1 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+    .wording .highlight {
+      font-size: 18px;
+    }
+
+  .wording2 h1 {
+    font-size: 17.5px;
+    letter-spacing: 0.5px;
+  }
+
+  .about-us {
+    padding: 30px;
+  }
+
+  .text-column {
+    padding: 10px;
+    max-width: 95%; /* Ensure the text column takes up most of the screen */
+  }
+
+  .text-column p {
+    font-size: 17px; /* Adjust font size for small devices */
+  }
+
+  .animated-heading {
+    font-size: 38px; /* Adjust for mobile */
+    text-align: center;
+  }
+
+  /* Ensure that headings and sections are spaced properly on mobile */
+  .wording, .about-us {
+    margin-top: 50px;
+  }
+}
+
+
+
+
+
