@@ -29,14 +29,14 @@ const Footer = () => {
             <span className="label">Follow Us:</span>
             <div className="social-icons">
               <a
-                href="https://www.facebook.com/share/1A6iTkawoY/?mibextid=wwXIfr"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img src={`${process.env.PUBLIC_URL}/Images/facebook.png`} alt="Facebook" />
               </a>
               <a
-                href="https://www.instagram.com/dhiveinteriors?igsh=NTBucDUwb2NqOGh6"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
               >
