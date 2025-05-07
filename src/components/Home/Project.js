@@ -82,9 +82,21 @@ const Service = () => {
                       alt={subcategory}
                       className="gallery-image"
                     />
+                    <div className="view-point">
+                      <a
+                        href={item.pageLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button className="view-site-button">View Site</button>
+                      </a>
+                    </div>
+
+
 
                   </a>
-                </div>
+ </div>
+
               ))
             )}
           </div>

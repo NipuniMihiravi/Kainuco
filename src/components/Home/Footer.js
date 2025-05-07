@@ -29,7 +29,7 @@ const Footer = () => {
             <span className="label">Follow Us:</span>
             <div className="social-icons">
               <a
-                href=""
+                href="https://www.facebook.com/share/16UpyxyKa2/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
               >
