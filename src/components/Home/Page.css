@@ -1569,6 +1569,7 @@ letter-spacing: 3px;
 }
 .package-header1 {
   height:80px;
+  margin-bottom: 20px;
 }
 
 .package-container {
@@ -1597,15 +1598,13 @@ letter-spacing: 3px;
 
 .package-heading {
   font-size: 25px;
-  margin-bottom: 30px;
   color: #CC5500;
   text-transform: uppercase;
 }
 
 .package-subheading {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
-  margin-bottom: 30px;
   color: black;
   text-align: left;
   text-transform: uppercase;

@@ -5,44 +5,49 @@ const Packages = () => {
   const packageData = [
     {
       heading: "WEB SITE DEVELOPMENT PACKAGE",
-      subheading: "RS.40,000/-",
+      subheading: "Send your requirements, and we'll send you a quotation",
       list: [
-        "3 pages including the Home Page",
-        "Additional pages cost Rs. 3,000 each",
+        "Cost varies depending on the number of pages.",
         "Mobile responsive design",
         "Email and Social media facility",
+        "2 Free Email Accounts",
+        "Free SSL Certificate",
+        "Discounts and gift cards",
         "User-friendly and attractive layout",
         "Free hosting included",
+        "Free Domain",
         "No service charges for changes to the existing application during the first year",
-        "Renewal cost: Rs. 15,000 per year"
+        "Renewal costs apply after the first year"
       ],
     },
     {
       heading: "Web Application Development Package",
-      subheading: "Prices are subject to change",
+      subheading: "Send your requirements, and we'll send you a quotation",
       list: [
               "Inventory Management System",
               "Reservation Management System",
               "HR Management System",
               "Email facility",
               "User-friendly and attractive layout",
-              "Free hosting included",
+              "Free Domain",
+              "Monthly backups",
               "No service charges for changes to the existing application during the first year",
+              "Renewal costs apply after the first year",
+              "Basic customer support"
             ],
 
     },
     {
       heading: "Portfolio Development Package",
-      subheading: "RS.20,000/-",
+      subheading: "Send your requirements, and we'll send you a quotation",
        list: [
-              "Single Page Content",
-              "Additional pages cost Rs. 2,500 each",
+              "Cost varies depending on the number of pages.",
               "Mobile responsive design",
               "Email and Social media facility",
               "User-friendly and attractive layout",
               "Free hosting included",
               "No service charges for changes to the existing application during the first year",
-              "Renewal cost: Rs. 10,000 per year"
+              "Renewal costs apply after the first year"
             ],
     },
   ];
