@@ -95,7 +95,7 @@ const App = () => {
               onClick={() => scrollToSection(coverImageRef)}
               style={{ cursor: "pointer" }}
             >
-              <img src="/Images/logo.png" alt="Logo" className="logos" />
+              <img src="/Images/logo.png" className="logos" />
             </div>
 
             <ul className="nav-links">
