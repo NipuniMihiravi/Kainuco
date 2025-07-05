@@ -27,6 +27,9 @@ const Service = () => {
       "Dhive Interiors Designer": [
         { id: 2, img: "/Images/Dhive.jpg", pageLink: "https://www.dhiveinteriors.com" },
       ],
+      "Wasala Tours": [
+              { id: 3, img: "/Images/login2.png", pageLink: "https://www.wasalatours.com" },
+            ],
     },
     "WEB APPLICATION": {
       "Cocoloco Gardens Resort": [
