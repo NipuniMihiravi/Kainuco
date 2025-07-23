@@ -30,6 +30,9 @@ const Service = () => {
       "Wasala Tours": [
               { id: 3, img: "/Images/login2.png", pageLink: "https://www.wasalatours.com" },
             ],
+            "Kings Basketball": [
+                          { id: 4, img: "/Images/Kings.png", pageLink: "https://kingsbaketball.onrender.com" },
+                        ],
     },
     "WEB APPLICATION": {
       "Cocoloco Gardens Resort": [
