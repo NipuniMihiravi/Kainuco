@@ -14,7 +14,6 @@ const Service = () => {
     const handleResize = () => {
       setIsLargeScreen(window.innerWidth > 1024);
     };
-
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -28,17 +27,33 @@ const Service = () => {
         { id: 2, img: "/Images/Dhive.jpg", pageLink: "https://www.dhiveinteriors.com" },
       ],
       "Wasala Tours": [
-              { id: 3, img: "/Images/login2.png", pageLink: "https://www.wasalatours.com" },
-            ],
-            "Kings Basketball": [
-                          { id: 4, img: "/Images/Kings.png", pageLink: "https://kingsbaketball.onrender.com" },
-                        ],
-    },
-    "WEB APPLICATION": {
-      "Cocoloco Gardens Resort": [
-        { id: 3, img: "/Images/inventory.png", pageLink: "https://inventory-management-frontend-fwsf.onrender.com" },
+        { id: 3, img: "/Images/login2.png", pageLink: "https://www.wasalatours.com" },
+      ],
+      "Kings Basketball": [
+        { id: 4, img: "/Images/Kings.png", pageLink: "https://www.kingsbasketballs.com" },
       ],
     },
+    "WEB APPLICATION": {
+      "Payment Management System": [
+        {
+          id: 3,
+          img: "/Images/inventory.png",
+          pageLinks: [
+            "https://gym-invoice-front.onrender.com",
+            "https://gym-invoice-back.onrender.com"
+          ]
+        },
+      ],
+    }
+  };
+
+  // Function to handle click for one or multiple links
+  const handleOpenLinks = (item) => {
+    if (item.pageLinks && Array.isArray(item.pageLinks)) {
+      item.pageLinks.forEach(link => window.open(link, "_blank"));
+    } else if (item.pageLink) {
+      window.open(item.pageLink, "_blank");
+    }
   };
 
   return (
@@ -77,11 +92,10 @@ const Service = () => {
             {Object.keys(galleryData[activeGallery]).map((subcategory) =>
               galleryData[activeGallery][subcategory].map((item) => (
                 <div key={item.id} className="gallery-item">
-                  <a
-                    href={item.pageLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <div
                     className="gallery-button"
+                    onClick={() => handleOpenLinks(item)}
+                    style={{ cursor: "pointer" }}
                   >
                     <img
                       src={item.img}
@@ -89,20 +103,18 @@ const Service = () => {
                       className="gallery-image"
                     />
                     <div className="view-point">
-                      <a
-                        href={item.pageLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <button
+                        className="view-site-button"
+                        onClick={(e) => {
+                          e.stopPropagation(); // prevent triggering image click
+                          handleOpenLinks(item);
+                        }}
                       >
-                        <button className="view-site-button">View Site</button>
-                      </a>
+                        View Site
+                      </button>
                     </div>
-
-
-
-                  </a>
- </div>
-
+                  </div>
+                </div>
               ))
             )}
           </div>
