@@ -39,7 +39,7 @@ const Service = () => {
           id: 3,
           img: "/Images/inventory.png",
           pageLinks: [
-            "https://gym-invoice-front.onrender.com",
+            "https://gym-invoices-front.onrender.com",
             "https://gym-invoice-back.onrender.com"
           ]
         },
