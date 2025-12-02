@@ -34,16 +34,7 @@ const Service = () => {
       ],
     },
     "WEB APPLICATION": {
-      "Payment Management System": [
-        {
-          id: 3,
-          img: "/Images/inventory.png",
-          pageLinks: [
-            "https://gym-invoices-front.onrender.com",
-            "https://gym-invoice-back.onrender.com"
-          ]
-        },
-      ],
+
     }
   };
 
